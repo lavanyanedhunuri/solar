@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+}
+.solarsystem{
+    height: 600px;
+    width: 600px;
+    border-radius: 50%;
+    background-image: url("universe.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    border: 2px solid white;
+    transform: translate(50%);
+   
+}
+.sun{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: 2px solid rgb(207, 221, 15);
+    box-shadow: 0 0 40px rgb(255, 217, 0);
+    background-color: red;
+    transform: translate(170px);
+}
+h1{
+    padding-top: 20%;
+}
+.earth{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 40px rgb(0, 217, 255);
+    background-color: rgba(25, 0, 255, 0.808);
+    transform: translate(250px);
+    transform: scaleX(20deg);
+    position: relative;
+    animation: orbit 25s linear infinite;
+}
+@keyframes orbit{
+        0% {
+            transform: rotate(0deg) translateX(330px) rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg) translateX(330px) rotate(-360deg);
+        }
+    }
+    
+
+
+
+
